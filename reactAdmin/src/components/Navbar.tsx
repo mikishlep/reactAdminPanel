@@ -1,17 +1,5 @@
 import React, { useState } from 'react';
-import {
-    AppBar,
-    IconButton,
-    Toolbar,
-    Typography,
-    Drawer,
-    List,
-    ListItem,
-    ListItemButton,
-    ListItemIcon,
-    ListItemText,
-    Container,
-} from '@mui/material';
+import { AppBar, IconButton, Toolbar, Typography, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Container } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import GroupIcon from '@mui/icons-material/Group';
@@ -52,7 +40,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 ModalProps={{ keepMounted: true }}
                 sx={{ '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240 } }}
             >
-                <Toolbar /> {/* Spacer to avoid overlap with fixed AppBar */}
+                <Toolbar />
                 <List>
                     <ListItem disablePadding>
                         <ListItemButton component={Link} to="/">
