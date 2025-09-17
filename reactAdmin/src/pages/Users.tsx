@@ -25,6 +25,7 @@ export default function Users() {
         { title: "Имя", key: "firstName" },
         { title: "Фамилия", key: "lastName" },
         { title: "Email", key: "email" },
+        { title: "Роль", key: "role" },
         { title: "Действия", key: "action", align: "right" },
     ];
 
@@ -141,6 +142,7 @@ export default function Users() {
                                                 <TableCell>{user.firstName}</TableCell>
                                                 <TableCell>{user.lastName}</TableCell>
                                                 <TableCell>{user.email}</TableCell>
+                                                <TableCell>{user.RoleId}</TableCell>
                                                 <TableCell align="right">
                                                     <Button
                                                         size="small"
